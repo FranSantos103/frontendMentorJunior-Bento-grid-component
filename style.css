@@ -1,0 +1,506 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+
+body{
+    background-color: #f5f5f5;
+    font-family: "DM Sans", sans-serif;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    display: block;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 260px 300px 300px 260px; 
+    gap: 20px;
+    grid-auto-rows: auto;
+    width: max-content;
+    max-width: 1190px;
+    margin: auto;                       
+
+    grid-template-areas:
+        "cardCreate cardHero cardHero cardSchedule"
+        "cardAi cardPlatforms cardConsistency cardSchedule"
+        "  .   cardGrowth cardFollowers cardFollowers";
+
+        justify-content: center;    
+        justify-items: center;
+}
+
+.cardCreate{
+    background-color: #faeee2;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 3rem;
+    padding-bottom: 3.3rem;
+    box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.297);
+    grid-area: cardCreate;
+    padding-right: 0.8rem ;
+}
+
+.createPost{
+    width: 13rem;
+    padding-top: 1.7rem;
+}
+
+.cardTitle{
+    font-size: 2rem;
+    font-weight: 500;
+    padding-left: 2.5rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+}
+
+.highlight{
+    font-style: italic ;
+    color: #7e5cd5;
+    font-weight: 500;
+}
+
+.cardHero{
+    background-color: #7651dc;
+    border-radius: 10px;
+    box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.297);
+    padding-top: 4rem;
+    grid-area: cardHero;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-self: flex-start;
+    padding-bottom: 4rem;
+}
+
+.heroTitle{
+    font-size: 3.8rem;
+    line-height: 3.5rem;
+    text-align: center; 
+    color: white;
+    font-weight: 500;
+}
+
+.faster{
+    font-weight: 500;
+    font-style: italic;
+}
+
+.heroReviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.reviewsImage{
+    padding-top: 2rem;
+    width: 12rem;
+}
+
+.ten{
+    color: #fdd167;
+    font-weight: 500;
+}
+
+.reviewsText{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    padding-top: 1rem;
+
+}
+
+.cardSchedule{
+    background-color: #dcd1fc;
+    box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.297);
+    border-radius: 10px;
+    grid-area: cardSchedule;
+    overflow: hidden;
+    width: 260px; 
+    align-self: flex-start;
+    padding-bottom: 1rem;
+    padding-top: 2.2rem;
+}
+
+.cardTitleCreate{
+    font-size: 2.5rem;
+    padding-top: 1.7rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    line-height: 2.7rem;
+}
+
+.writeAI{
+    font-size: 2.8rem;
+    padding-left: 2rem;
+    line-height: 45px;
+    padding-bottom: 3.1rem;
+}
+
+.cardImage{
+    width: 23rem;
+    transform:translateX(1.8rem);
+    padding-top: 2rem;
+}
+
+.cardDescription{
+    font-size: 1rem;
+    width: 80%;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1.8rem;
+}
+
+.cardAi{
+    background-color: #ffcc69;
+    border-radius: 10px;
+    box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.297);
+    grid-area: cardAi;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+}
+
+.aiContent{
+    width: 15rem;
+    padding-left: 2rem;
+}
+
+.cardPlatforms{
+    grid-area: cardPlatforms;
+    box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.297);
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 290px;
+    border-radius: 10px;
+    padding: 1.3rem;
+    padding-bottom: 1.5rem;
+    padding-top: 2rem;
+    align-self: flex-start;
+    margin-top: -6.5rem; 
+    margin-right: 0.6rem ;
+}
+
+.multiplePlatforms{
+    width: 18rem;
+    padding-left: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.multipleAccounts{
+    font-size: 1.9rem;
+    width: 80%;
+    line-height: 30px;
+}
+
+.cardConsistency{
+    grid-area: cardConsistency;
+    background-color: #ffcc69;
+    box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.297);
+    width: 290px;
+    height: 249px;
+    border-radius: 10px;
+    padding: 1.4rem;
+    align-self: flex-start;
+    margin-top: -6.5rem; 
+    margin-left: 0.5rem;
+    overflow: hidden;
+}
+
+.maintainConsistent{
+    font-size: 1.8rem;
+    width: 80%;
+    line-height: 30px;
+}
+
+.consistentSchedule{
+    width: 14rem;
+    padding-top: 1rem;
+    height: 200px;
+}
+
+.cardGrowth{
+    grid-area: cardGrowth;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.297);
+    width: 290px;
+    height: 263px;
+    border-radius: 10px;
+    padding: 1.4rem;
+    align-self: flex-start;
+    margin-top: -17.6rem; 
+    margin-right: 10px;
+
+}
+
+.cardMetric{
+    font-size: 4rem;
+}
+
+.audienceGrowth{
+    width: 12rem;
+    padding-top: 2rem;
+}
+
+.cardImageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardFollowers{
+    grid-area: cardFollowers;
+    background-color: #7651dc;
+    box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.297);
+    width: 575px;
+    height: 263px;
+    border-radius: 10px;
+    align-self: flex-start;
+    margin-top: -17.6rem; 
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.growFollowers{
+    width: 16rem;
+    padding-left: 2rem;
+}
+
+.growFollowersWithContent{
+    color: white;
+    width: 60%;
+    font-size: 2.5rem;
+    padding-left: 2rem;
+    line-height: 40px;
+}
+
+
+@media (max-width: 600px){
+
+
+.cardPlatforms,
+.cardConsistency,
+.cardGrowth,
+.cardFollowers {
+    margin: 0;
+}
+
+
+
+body{
+    background-color: #f5f5f5;
+    font-family: "DM Sans", sans-serif;
+    display: block;
+}
+
+
+    main{
+    display: grid;
+    grid-template-columns: auto; 
+    gap: 30px;
+    grid-auto-rows: auto;
+    width: 100%;
+                     
+
+    grid-template-areas:
+        "cardHero"
+        "cardPlatforms"
+        "cardConsistency"
+        "cardSchedule"
+        "cardFollowers"
+        "cardGrowth"
+        "cardCreate"
+        "cardAi";
+
+        justify-content: center;    
+        justify-items: center;
+}
+
+
+.cardHero{
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    width: 95%;
+}
+
+.cardPlatforms{
+    overflow: visible;
+    width: 95%;
+    border-radius: 10px;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1.4rem;
+    margin-right: 0;
+}
+
+.multiplePlatforms{
+    width: 22rem;
+    padding-left: 0;
+    padding-bottom: 0;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.068);
+    border-radius: 32px;
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: center;
+}
+
+
+.multiplePlatforms{
+    width: 97%;
+}
+
+.multipleAccounts{
+    font-size: 1.7rem;
+    width: 100%;
+    line-height: 30px;
+    margin-top: 1rem;
+}
+
+.cardConsistency{
+    width: 95%;
+    height: 263px;
+    border-radius: 10px;
+    padding: 1.5rem;
+
+}
+
+.maintainConsistent{
+    font-size: 1.8rem;
+    width: 100%;
+    line-height: 30px;
+}
+
+
+.cardSchedule{
+    width: 95%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    padding-bottom: 0;
+    padding-top: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.cardTitle{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    line-height: 2rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+
+}
+
+.cardImage{
+    width: 90%;
+    transform: translateX(0rem);
+}
+
+.cardDescription{
+    font-size: 1.3rem;
+    padding-bottom: 1.8rem;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    padding-left: 0rem;
+
+}
+
+.cardFollowers{
+    width: 95%; 
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.growFollowersWithContent{
+    font-size: 2rem;
+    width: 70%;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    margin-right: 2.5rem;
+    text-align: center;
+}
+
+.growFollowers{
+    width: 70%;
+    margin-right: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.cardGrowth{
+    width: 95%;
+    height: 263px;
+    border-radius: 10px;
+    padding: 1.4rem;
+    align-self: flex-start;
+}
+
+.fasterAudience{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+.cardCreate{
+    padding-left: 20px;
+    width: 95%;
+    height: 263px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+
+}
+
+.cardTitleCreate{
+    font-size: 2rem;
+    padding-left: 1rem;
+    line-height: 2.1rem;
+    font-weight: 500;
+    margin: 0; 
+
+}
+
+.createPost{
+    width: 15rem;
+    padding-left: 1rem;
+    margin-top: 0; 
+    margin-top: -2rem; 
+}
+
+.cardAi{
+    width: 95%;
+    padding-top: 2rem;
+}
+
+.writeAI{
+    font-size: 2.3rem;
+    padding-left: 1.7rem;
+    line-height: 45px;
+    padding-bottom: 1.8rem;
+}
+
+.aiContent{
+    width: 80%;
+    height: 75%;
+    padding-left: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+
+
+    
+}
